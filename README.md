@@ -144,7 +144,7 @@ weighted avg       0.81      0.76      0.78      3958
 ```
 
 ## 5. Contributors
-기획    
+기획 및 제작    
 ![smilegate_ai](https://github.com/smilegate-ai/korean_unsmile_dataset/blob/main/rsc/smilegate_ai.jpg)    
 데이터 태깅 및 검수    
 ![underscore](https://github.com/smilegate-ai/korean_unsmile_dataset/blob/main/rsc/underscore.jpg)       
