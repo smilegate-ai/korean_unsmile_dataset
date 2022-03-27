@@ -81,13 +81,13 @@ Total | 1,993 | 1,475 | 1,418 | 2,154 | 749 | 1,312 | 1,471 | 703 | 3,932 | 4,67
 >>> datasets = load_dataset('smilegate-ai/kor_unsmile')
 >>> print(datasets)
 DatasetDict({
-    train: Dataset({
-        features: ['id', 'sentence', 'categories'],
-        num_rows: 111
+    valid: Dataset({
+        features: ['문장', '여성/가족', '남성', '성소수자', '인종/국적', '연령', '지역', '종교', '기타 혐오', '악플/욕설', 'clean', '개인지칭', 'labels'],
+        num_rows: 3737
     })
-    validation: Dataset({
-        features: ['id', 'sentence', 'categories'],
-        num_rows: 111
+    train: Dataset({
+        features: ['문장', '여성/가족', '남성', '성소수자', '인종/국적', '연령', '지역', '종교', '기타 혐오', '악플/욕설', 'clean', '개인지칭', 'labels'],
+        num_rows: 15005
     })
 })
 ```
