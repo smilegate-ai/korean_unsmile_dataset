@@ -144,8 +144,10 @@ weighted avg       0.81      0.76      0.78      3958
 ```
 
 ## 5. Contributors
-![smilegate_ai](https://github.com/smilegate-ai/korean_unsmile_dataset/blob/main/rsc/smilegate_ai.jpg)     
-![underscore](https://github.com/smilegate-ai/korean_unsmile_dataset/blob/main/rsc/underscore.jpg)     
+기획    
+![smilegate_ai](https://github.com/smilegate-ai/korean_unsmile_dataset/blob/main/rsc/smilegate_ai.jpg)    
+데이터 태깅 및 검수    
+![underscore](https://github.com/smilegate-ai/korean_unsmile_dataset/blob/main/rsc/underscore.jpg)       
     
 ## 6. License
 Smilegate AI `UnSmile`의 `소스코드 및 baseline 모델`은 [Apache 2.0](LICENSE.apache-2.0) 라이선스 하에 공개되어 있습니다.   
