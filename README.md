@@ -64,6 +64,7 @@ Total | 18,742
 ### 1.4 어노테이션 방법
 - 단일 댓글 문장에 대해 3명의 작업자가 혐오 카테고리 분류
 - 5인의 혐오 표현 전문가가 최종 검수
+- * 혐오의 판단 기준은 사람마다 상이할 수 있으며, 태깅 결과는 100%의 정확도를 보장하지 않습니다. 태깅 오류를 발견하실 경우, issue에 남겨주세요!
 
 ## 2. 데이터셋 사용법
 본 데이터셋은 huggingface datasets hub를 통해 사용할 수 있습니다.   
@@ -150,3 +151,4 @@ weighted avg       0.81      0.76      0.78      3958
 Smilegate AI `UnSmile`의 `소스코드 및 baseline 모델`은 [Apache 2.0](LICENSE.apache-2.0) 라이선스 하에 공개되어 있습니다.   
 Smilegate AI `UnSmile`의 `데이터셋`은 [CC-BY-NC-ND 4.0 라이선스](https://creativecommons.org/licenses/by-nc-nd/4.0/) 하에 공개되어 있습니다.   
 코드 및 모델, 데이터셋을 사용할 경우 라이선스 내용을 준수해 주십시오. 라이선스 전문은 [Apache 2.0](LICENSE.apache-2.0), [LICENSE.cc-by-nc-nd-4.0](LICENSE.cc-by-nc-nd-4.0) 파일에서 확인하실 수 있습니다.
+본 데이터셋의 내용은 Smilegate AI의 의견과는 무관합니다.    
