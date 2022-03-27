@@ -78,7 +78,7 @@ Total | 1,993 | 1,475 | 1,418 | 2,154 | 749 | 1,312 | 1,471 | 703 | 3,932 | 4,67
 - Python
 ```python
 >>> from datasets import load_dataset
->>> datasets = load_dataset('smilegate_ai/kor_unsmile')
+>>> datasets = load_dataset('smilegate-ai/kor_unsmile')
 >>> print(datasets)
 DatasetDict({
     train: Dataset({
