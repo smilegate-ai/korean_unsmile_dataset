@@ -101,20 +101,21 @@ Google colab을 통해 모델 학습과 테스트를 할 수 있는 tutorial 노
 ### 3.2 Baseline 모델 테스트
 - Python
 ```python
->>> from transformers import TextClassificationPipeline, BertForSequenceClassification
+>>> from transformers import TextClassificationPipeline, BertForSequenceClassification, AutoTokenizer
 >>> model_name = 'smilegate-ai/kor_unsmile'
 >>> model = BertForSequenceClassification.from_pretrained(
-    model_name
+        model_name
     )
+>>> tokenizer = AutoTokenizer.from_pretrained(model_name)
 >>> pipe = TextClassificationPipeline(
-    model = model,
-    tokenizer = tokenizer,
-    device=0,
-    return_all_scores=True,
-    function_to_apply='sigmoid'
+        model = model,
+        tokenizer = tokenizer,
+        device=0,
+        return_all_scores=True,
+        function_to_apply='sigmoid'
     )
 >>> for result in pipe("이래서 여자는 게임을 하면 안된다")[0]:
-    print(result)
+        print(result)
     
 {'label': '여성/가족', 'score': 0.8253053426742554}
 {'label': '남성', 'score': 0.039725180715322495}
