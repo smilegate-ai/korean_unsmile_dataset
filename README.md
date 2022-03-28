@@ -108,7 +108,7 @@ Google colab을 통해 모델 학습과 테스트를 할 수 있는 tutorial 노
 >>> pipe = TextClassificationPipeline(
         model = model,
         tokenizer = tokenizer,
-        device=0,
+        device=0,   # cpu: -1, gpu: gpu number
         return_all_scores=True,
         function_to_apply='sigmoid'
     )
