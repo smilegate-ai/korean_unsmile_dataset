@@ -184,7 +184,7 @@ weighted avg       0.82      0.73      0.77      3985
 [![[Smilegate AI] UnSmile 데이터셋](http://img.youtube.com/vi/XmCnlcnzWtQ/0.jpg)](https://youtu.be/XmCnlcnzWtQ?t=0s)    
 
     
-## 6. License
+## 7. License
 Smilegate AI `UnSmile`의 `소스코드 및 baseline 모델`은 [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) 라이선스 하에 공개되어 있습니다.   
 Smilegate AI `UnSmile`의 `데이터셋`은 [CC-BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) 라이선스 하에 공개되어 있습니다.   
 코드 및 모델, 데이터셋을 사용할 경우 라이선스 내용을 준수해 주십시오.    
