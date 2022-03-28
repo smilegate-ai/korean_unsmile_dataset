@@ -165,7 +165,7 @@ weighted avg       0.82      0.73      0.77      3985
 ## 4. Citation
 ```
 @misc{SmilegateAI2022KoreanUnSmileDataset,
-  title         = {Korean UnSmile dataset: Human-annotated Korean Hate Speech Dataset},
+  title         = {Korean UnSmile dataset: Human-annotated Multi-label Korean Hate Speech Dataset},
   author        = {Seonghyun Kim},
   year          = {2022},
   howpublished  = {\url{https://github.com/smilegate-ai/korean_unsmile_dataset}},
