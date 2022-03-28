@@ -174,14 +174,14 @@ weighted avg       0.82      0.73      0.77      3985
 ```
 
 ## 5. Contributors
-기획 및 제작 ([Smilegate AI](https://smilegate.ai)    
+기획 및 제작 ([Smilegate AI](https://smilegate.ai))       
 ![smilegate_ai](https://github.com/smilegate-ai/korean_unsmile_dataset/blob/main/rsc/smilegate_ai.jpg)    
 
-데이터 태깅 및 검수 ([언더스코어](http://underscore.kr/)    
+데이터 태깅 및 검수 ([언더스코어](http://underscore.kr/))    
 ![underscore](https://github.com/smilegate-ai/korean_unsmile_dataset/blob/main/rsc/underscore.jpg)     
 ```
 언더스코어는 데이터 기반 지식 컨텐츠 스타트업입니다.    
-전문지식을 소개하는 모션그래픽을 제작하고, 사회과학 분야에서 데이터 분석과 컨설팅 활동을 해오고 있습니다     
+전문지식을 소개하는 모션그래픽을 제작하고, 사회과학 분야에서 데이터 분석과 컨설팅 활동을 해오고 있습니다.     
 ```
 
 ## 6. 홍보 자료   
