@@ -101,26 +101,40 @@ Google colab을 통해 모델 학습과 테스트를 할 수 있는 tutorial 노
 ### 3.2 Baseline 모델 테스트
 - Python
 ```python
->>> from transformers import TextClassificationPipeline
->>> datasets = load_dataset('smilegate-ai/kor_unsmile')
->>> print(datasets)
-DatasetDict({
-    valid: Dataset({
-        features: ['문장', '여성/가족', '남성', '성소수자', '인종/국적', '연령', '지역', '종교', '기타 혐오', '악플/욕설', 'clean', '개인지칭', 'labels'],
-        num_rows: 3737
-    })
-    train: Dataset({
-        features: ['문장', '여성/가족', '남성', '성소수자', '인종/국적', '연령', '지역', '종교', '기타 혐오', '악플/욕설', 'clean', '개인지칭', 'labels'],
-        num_rows: 15005
-    })
-})
+>>> from transformers import TextClassificationPipeline, BertForSequenceClassification
+>>> model_name = 'smilegate-ai/kor_unsmile'
+>>> model = BertForSequenceClassification.from_pretrained(
+    model_name, 
+    num_labels=num_labels, 
+    problem_type="multi_label_classification"
+    )
+>>> pipe = TextClassificationPipeline(
+    model = model,
+    tokenizer = tokenizer,
+    device=0,
+    return_all_scores=True,
+    function_to_apply='sigmoid'
+    )
+>>> for result in pipe("이래서 여자는 게임을 하면 안된다")[0]:
+    print(result)
+    
+{'label': '여성/가족', 'score': 0.8253053426742554}
+{'label': '남성', 'score': 0.039725180715322495}
+{'label': '성소수자', 'score': 0.012144332751631737}
+{'label': '인종/국적', 'score': 0.023181889206171036}
+{'label': '연령', 'score': 0.010315303690731525}
+{'label': '지역', 'score': 0.018454890698194504}
+{'label': '종교', 'score': 0.011270025745034218}
+{'label': '기타 혐오', 'score': 0.0207340307533741}
+{'label': '악플/욕설', 'score': 0.057331427931785583}
+{'label': 'clean', 'score': 0.1401052623987198}
 ```
 
 ### 3.3 Baseline 모델 결과
 
 문장 | 여성/가족 | 남성 | 성소수자 | 인종/국적 | 연령 | 지역 | 종교 | 기타혐오 | 악플/욕설 | clean   
 --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---:
-이래서 여자는 게임을 하면 안된다 | **0.84** | 0.04 | 0.01 | 0.02 | 0.01 | 0.02 | 0.01 | 0.02 | 0.06 | 0.12
+이래서 여자는 게임을 하면 안된다 | **0.83** | 0.04 | 0.01 | 0.02 | 0.01 | 0.02 | 0.01 | 0.02 | 0.06 | 0.12
 한남 재기해 | 0.04 | **0.90** | 0.01 | 0.03 | 0.02 | 0.02 | 0.02 | 0.01 | 0.08 | 0.05
 젠신병자들 극혐 | 0.13 | 0.04 | **0.93** | 0.04 | 0.14 | 0.07 | 0.07 | **0.77** | 0.10 | 0.04
 니네 나라로 좀 돌아가라 | 0.02 | 0.02 | 0.01 | **0.90** | 0.02 | 0.02 | 0.03 | 0.02 | 0.06 | 0.04
@@ -171,4 +185,5 @@ weighted avg       0.82      0.73      0.77      3985
 Smilegate AI `UnSmile`의 `소스코드 및 baseline 모델`은 [Apache 2.0](LICENSE.apache-2.0) 라이선스 하에 공개되어 있습니다.   
 Smilegate AI `UnSmile`의 `데이터셋`은 [CC-BY-NC-ND 4.0 라이선스](https://creativecommons.org/licenses/by-nc-nd/4.0/) 하에 공개되어 있습니다.   
 코드 및 모델, 데이터셋을 사용할 경우 라이선스 내용을 준수해 주십시오.    
+데이터셋의 상업적 사용의 경우, seonghkim@smilegate.com 으로 문의 부탁드립니다.    
 본 데이터셋의 내용은 Smilegate AI의 의견과 무관합니다.     
