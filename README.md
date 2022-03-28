@@ -103,9 +103,7 @@ Google colab을 통해 모델 학습과 테스트를 할 수 있는 tutorial 노
 ```python
 >>> from transformers import TextClassificationPipeline, BertForSequenceClassification, AutoTokenizer
 >>> model_name = 'smilegate-ai/kor_unsmile'
->>> model = BertForSequenceClassification.from_pretrained(
-        model_name
-    )
+>>> model = BertForSequenceClassification.from_pretrained(model_name)
 >>> tokenizer = AutoTokenizer.from_pretrained(model_name)
 >>> pipe = TextClassificationPipeline(
         model = model,
