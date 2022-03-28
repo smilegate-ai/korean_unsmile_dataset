@@ -1,6 +1,7 @@
 # Korean UnSmile Dataset
 ![logo](https://github.com/smilegate-ai/korean_unsmile_dataset/blob/main/rsc/unsmile_logo.jpg)   
 Smilegate AI에서 공개하는 한국어 혐오표현 "☹️ UnSmile" 데이터셋입니다.
+[![[Smilegate AI] UnSmile 데이터셋](http://img.youtube.com/vi/XmCnlcnzWtQ/0.jpg)](https://youtu.be/XmCnlcnzWtQ?t=0s) 
 
 
 
