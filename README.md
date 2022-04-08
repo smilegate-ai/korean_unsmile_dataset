@@ -170,6 +170,17 @@ weighted avg       0.82      0.73      0.77      3985
   howpublished  = {\url{https://github.com/smilegate-ai/korean_unsmile_dataset}},
 }
 ```
+```
+@misc{kang2022korean,
+    title={Korean Online Hate Speech Dataset for Multilabel Classification: How Can Social Science Aid Developing Better Hate Speech Dataset?},
+    author={TaeYoung Kang and Eunrang Kwon and Junbum Lee and Youngeun Nam and Junmo Song and JeongKyu Suh},
+    year={2022},
+    eprint={2204.03262},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+https://arxiv.org/pdf/2204.03262
+```
 
 ## 5. Contributors
 기획 및 제작 ([Smilegate AI](https://smilegate.ai))       
