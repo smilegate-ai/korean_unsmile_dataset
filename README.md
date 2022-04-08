@@ -179,8 +179,9 @@ weighted avg       0.82      0.73      0.77      3985
     archivePrefix={arXiv},
     primaryClass={cs.CL}
 }
-https://arxiv.org/pdf/2204.03262
 ```
+https://arxiv.org/pdf/2204.03262
+
 
 ## 5. Contributors
 기획 및 제작 ([Smilegate AI](https://smilegate.ai))       
